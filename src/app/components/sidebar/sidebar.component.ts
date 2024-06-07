@@ -6,10 +6,17 @@ import { Component, OnInit } from "@angular/core";
 })
 export class SidebarComponent implements OnInit {
   collapseShow = "hidden";
+  isDropdownOpen = false;
+
   constructor() {}
 
   ngOnInit() {}
+
   toggleCollapseShow(classes) {
     this.collapseShow = classes;
+  }
+
+  toggleDropdown() {
+    this.isDropdownOpen = !this.isDropdownOpen;
   }
 }

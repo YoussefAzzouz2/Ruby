@@ -7,12 +7,15 @@
     <div
       class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
     >
-      <a
-        [routerLink]="['/']"
-        class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-      >
-        Notus Angular
+      <a href="/">
+        <img
+          alt="..."
+          src="assets/img/Ruby_logo.png"
+          class="shadow-lg rounded-full mx-auto"
+          style="max-width: 50px;"
+        />
       </a>
+
       <button
         class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
         type="button"
@@ -26,23 +29,28 @@
       [ngClass]="{ hidden: !navbarOpen, 'block rounded shadow-lg': navbarOpen }"
       id="example-navbar-warning"
     >
-      <ul class="flex flex-col lg:flex-row list-none mr-auto">
+      <ul class="flex flex-col lg:flex-row list-none ">
         <li class="flex items-center">
           <a
             class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             href="https://www.creative-tim.com/learning-lab/tailwind/angular/overview/notus?ref=na-auth-navbar"
           >
-            <i
-              class="lg:text-blueGray-200 text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2"
-            ></i>
-            Docs
+            Provide service
+          </a>
+        </li>
+      </ul>
+      <ul class="flex flex-col lg:flex-row list-none ">
+        <li class="flex items-center">
+          <a
+            class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+            href="https://www.creative-tim.com/learning-lab/tailwind/angular/overview/notus?ref=na-auth-navbar"
+          >
+            Offer service
           </a>
         </li>
       </ul>
       <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-        <li class="flex items-center">
-          <app-pages-dropdown class="block"></app-pages-dropdown>
-        </li>
+
         <li class="flex items-center">
           <a
             class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -86,8 +94,17 @@
           <button
             class="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
             type="button"
+            routerLink="/auth/register"
           >
-            <i class="fas fa-arrow-alt-circle-down"></i> Download
+            <i class="fas fa-arrow-alt-circle-down"></i> Sign Up
+          </button>
+
+          <button
+            class="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+            type="button"
+            routerLink="/auth/login"
+          >
+            <i class="fas fa-arrow-alt-circle-down"></i> Sign In
           </button>
         </li>
       </ul>

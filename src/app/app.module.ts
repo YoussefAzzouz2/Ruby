@@ -39,6 +39,7 @@ import { TableDropdownComponent } from "./components/dropdowns/table-dropdown/ta
 import { PagesDropdownComponent } from "./components/dropdowns/pages-dropdown/pages-dropdown.component";
 import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
+import {LandingComponent} from './views/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { SidebarComponent } from "./components/sidebar/sidebar.component";
     LoginComponent,
     RegisterComponent,
     IndexComponent,
+    LandingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -11,7 +11,7 @@ import { SettingsComponent } from "./views/admin/settings/settings.component";
 import { TablesComponent } from "./views/admin/tables/tables.component";
 
 // auth views
-  import { LoginComponent } from "./views/auth/login/login.component";
+import { LoginComponent } from "./views/auth/login/login.component";
 import { RegisterComponent } from "./views/auth/register/register.component";
 
 // no layouts views
@@ -34,6 +34,8 @@ const routes: Routes = [
     path: "auth",
     component: AuthComponent,
     children: [
+      { path: "login", component: LoginComponent },
+      { path: "register", component: RegisterComponent },
       { path: "", redirectTo: "login", pathMatch: "full" },
     ],
   },
